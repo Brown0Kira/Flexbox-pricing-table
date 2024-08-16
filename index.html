@@ -9,16 +9,114 @@
       rel="stylesheet"
     />
     <style>
-      container {
-        display: flex;
-        
+
+        body {
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
       }
-      body {
-        font-family: "Sono", sans-serif;
+      .pricing-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
       }
 
-      /* Hint: What can you do with a media query and flexbox? */
+      .pricing-plan {
+      margin-top: 50px;
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+      .plan-title1 {
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        font-size: 24px ;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .plan-title2 {
+       background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+       font-size: 24px ;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .plan-title3 {
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        font-size: 24px ;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .plan-title4 {
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        font-size: 24px ;
+        color: white;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .plan-features li {
+        margin-bottom: 20px;
+        
+      }
+
+      .plan-button1 {
+        margin-top: 10px;
+        padding: 10px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        color: #f2f2f2;
+        border-radius: 5px;
+        }
+
+      .plan-button2 {
+        margin-top: 10px;
+        padding: 10px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        color: #f2f2f2;
+        border-radius: 5px;
+      }
+
+      .plan-button3 {
+        margin-top: 10px;
+        padding: 10px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        color: #f2f2f2;
+        border-radius: 5px;
+      }
+
+      .plan-button4 {
+        margin-top: 10px;
+        padding: 10px;
+        background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+        color: #f2f2f2;
+        border-radius: 5px;
+      }
+  
+    
       @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+         height: 100%;
+        }
       }
     </style>
   </head>
@@ -26,35 +124,89 @@
   <body>
     <div class="pricing-container">
       <div class="pricing-plan">
-        <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 10GB Storage</li>
-          <li>✅ 1 User</li>
-          <li>🚫 Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
+        <div class="plan-title1">Mobile <br/>480p</div>
+        <div class="plan-price">
+          <h3>Monthly price</h3>
+        ₹149 <hr/>
+        </div>
+        <div class="plan-features">
+              <h3>Video and sound quality</h3>  
+              Fair<hr/>
+              <h3>Resolution</h3>
+              480p<hr/>
+              <h3>Supported devices</h3>
+              Mobile phone, tablet<hr/>
+              <h3>Devices your household can watch at the same time</h3>
+               1<hr/>
+               <h3>Download devices</h3>
+               1<br/>
+               <button class="plan-button1">Choose</button>
+        </div>
+      </div>    
+      <div class="pricing-plan">
+        <div class="plan-title2">Basic <br/> 720p</div>
+        <div class="plan-price">
+          <h3>Monthly Price</h3> 
+          ₹199<hr/>
+         </div>
+        <div class="plan-features">
+          <h3>Video and sound quality</h3>  
+          Good<hr/>
+          <h3>Resolution</h3>
+          720p(HD)<hr/>
+          <h3>Supported devices</h3>
+          TV, computer, mobile phone, tablet<hr/>
+          <h3>Devices your household can watch at the same time</h3>
+           1<hr/>
+           <h3>Download devices</h3>
+           1<br/>
+           <button class="plan-button2">Choose</button>
+           </div>
+       
       </div>
       <div class="pricing-plan">
-        <div class="plan-title">Standard</div>
-        <div class="plan-price">$19.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 50GB Storage</li>
-          <li>✅ 5 Users</li>
-          <li>✅ Phone &amp; Email Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
+        <div class="plan-title3">Standard <br/>1080p </div>
+        <div class="plan-price">
+          <h3>Monthly Price</h3> 
+          ₹499<hr/>
+        </div>
+        <div class="plan-features">
+          <h3>Video and sound quality</h3>  
+          Great<hr/>
+          <h3>Resolution</h3>
+          1080p(HD)<hr/>
+          <h3>Supported devices</h3>
+          TV, computer, mobile phone, tablet<hr/>
+          <h3>Devices your household can watch at the same time</h3>
+           2<hr/>
+           <h3>Download devices</h3>
+           2<br/>
+           <button class="plan-button3">Choose</button>
+        </div>
       </div>
       <div class="pricing-plan">
-        <div class="plan-title">Premium</div>
-        <div class="plan-price">$49.99/month</div>
-        <ul class="plan-features">
-          <li>✅ 100GB Storage</li>
-          <li>✅ 10 Users</li>
-          <li>✅ 24/7 Support</li>
-        </ul>
-        <button class="plan-button">Sign Up</button>
+        <div class="plan-title4">Premuim <br/> 4K+HDR</div>
+        <div class="plan-price">
+          <h3>Monthly Price</h3> 
+          ₹649<hr/>
+        </div>
+        <div class="plan-features">
+          <h3>Video and sound quality</h3>  
+          Excellent<hr/>
+          <h3>Resolution</h3>
+          4k(Ultra HD)+HDR<hr/>
+          <h3>Supported devices</h3>
+          TV, computer, mobile phone, tablet<hr/>
+          <h3>Devices your household can watch at the same time</h3>
+           4<hr/>
+           <h3>Download devices</h3>
+           6<br/>
+           <button class="plan-button4">Choose</button>
+        </div>
+
+       </div>
       </div>
-    </div>
+       
+
   </body>
 </html>
